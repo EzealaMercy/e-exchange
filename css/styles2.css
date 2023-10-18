@@ -1,0 +1,1122 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .side-bar{
+    width: 15%;
+    height: 100vh;
+    background: rgb(39, 44, 97);
+    padding: 30px 5px;
+}
+.main .side-bar .logo{
+    color: orangered;
+    text-shadow: 1px 1px 1px rgb(34, 34, 34);
+    font-size: 18px;
+    font-weight: bold;
+    background: rgb(58, 66, 157);
+    padding: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.main .side-bar .logo span{
+    color: crimson;
+}
+.main .side-bar ul{
+    margin: 50px 0px 100px;
+}
+.main .side-bar ul li{
+    margin-top: 22px;
+    list-style: none;
+    color: rgba(245, 245, 245, 0.792);
+}
+.main .side-bar ul li a{
+    margin-top: 22px;
+    color: rgba(245, 245, 245, 0.792);
+    text-decoration: none;
+    transition: 0.4s;
+}
+.main .side-bar ul li a:hover{
+    color: orange;
+}
+.main .side-bar ul .trade a{
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+}
+.main .side-bar ul .trade .fa-sharp{
+    color: orange;
+}
+.main .side-bar ul li .fa-solid, .fa-artstation, .fa-sharp{
+    margin-right: 7px;
+    border: 0.5px solid rgba(245, 245, 245, 0.516) ;
+    padding: 8px;
+    border-radius: 35%;
+    font-size: 13px;
+}
+.main .side-bar .last-side{
+    margin-left: 10px;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 7px;
+}
+.main .side-bar .last-side p{
+    margin-left: 10px;
+    font-size: 12px;
+}
+.main .side-bar .sign-out{
+    margin-left: 5px;
+    padding: 5px 20px;
+    border: 1px solid rgba(245, 245, 245, 0.194);
+    border-radius: 5px;
+    color: orange;
+    font-weight: bold;
+}
+.main .side-bar .sign-out a{
+    text-decoration: none;
+    color: orange;
+}
+.main .side-bar .sign-out .fa-solid{
+    margin-right: 6px;
+    color: rgba(255, 166, 0, 0.591);
+}
+.main .side-bar .twit{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.main .side-bar .twit a{
+    margin-right: 7px;
+    font-size: 12px;
+}
+.main .side-bar .twit a .fa-twitter{
+    color: white;
+    background: rgb(32, 117, 214);
+    padding: 5px;
+    border-radius: 7px;
+}
+.main .side-bar .twit a .fa-telegram{
+    background: whitesmoke;
+    color: rgb(32, 117, 214);
+    padding: 5px;
+    border-radius: 7px;
+}
+.main .side-bar .twit a .fa-facebook{
+    background: rgb(25, 81, 149);
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 7px;
+}
+/**sec-bar**/
+.main .sec-bar{
+    width: 85%;
+    height: 100vh;
+    background: linear-gradient(rgba(2, 0, 0, 0.458), rgba(0, 0, 0, 0.378)), url(../images/pix16.jpg);;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+.main .nav-top{
+    display: none;
+}
+.main .sec-bar .sec-width{
+    width: 34%;
+    height: fit-content;
+    margin-top: 0px;
+    background: rgb(46, 52, 118);
+    border: 3px solid rgba(87, 100, 244, 0.184);
+    border-radius: 8px;
+    padding: 20px 20px;
+    position: relative;
+    font-family: 'poppins';
+}
+.main .sec-bar .sec-width .fa-retweet{
+    position: absolute;
+    left: 50%;
+    color: white;
+    background: rgba(123, 255, 0, 0.448);
+    border: 2px solid rgb(46, 52, 118);
+    border-radius: 10px;
+    padding: 7px;
+    transform: translate(-50%,-25%);
+    cursor: pointer;
+}
+.main .sec-bar .sec-width .flex1 .max-num{
+    display: flex;
+    justify-content: space-between;
+}
+.main .sec-bar .sec-width .flex1{
+    background: rgba(25, 30, 84, 0.351) ;
+    margin-top: 20px;
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.main .sec-bar .sec-width .flex1 .first-1 .select{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main .sec-bar .sec-width .flex1 .first-1 .select .fa-angle-down{
+    transition: transform .2s;
+}
+.rotate .fa-angle-down{
+    transform: rotate(180deg);
+}
+.rotate2 .fa-angle-down{
+    transform: rotate(180deg);
+}
+.main .sec-bar .sec-width .flex1 .first-1 h5{
+    margin-right: 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.main .sec-bar .sec-width .flex1 .first-1 h5 .fa-bitcoin{
+    color: goldenrod;
+}
+.main .sec-bar .sec-width .flex1 .first-1 h5 .fa-ethereum{
+    color: lightgray;
+}
+.main .sec-bar .sec-width .flex1 .first-1 h5 .fa-brands{
+    margin-right: 5px;
+}
+.main .sec-bar .sec-width .search-cont input, .main .sec-bar .sec-width .search2 .inp{
+    border-radius: 20px;
+    background: rgba(74, 85, 206, 0.351);
+    width: 100%;
+    border-style: none;
+    outline: none;
+    padding: 3px 22px;
+    color: whitesmoke;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.282), 0px 2px 2px rgba(0, 0, 0, 0.259);
+}
+
+.main .sec-width .ul .search-cont,.main .sec-width .ul .search2 {
+    position: relative;
+    background: rgba(74, 85, 206, 0.351);
+    width: 170px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: width 1.5s;
+    box-shadow: 2px 2px 2px rgba(16, 16, 16, 0.38), 0px 2px 3px rgba(0, 0, 0, 0.351);
+}
+.main .sec-width .ul .search-cont.active{
+    width: 0px;
+}
+.main .sec-width .ul .search2.active{
+    width: 0px;
+}
+.main .sec-width .ul .search-cont input.active, .main .sec-width .ul .search2 .inp.active{
+    width: 0px;
+}
+.main .sec-width .ul .search-cont .fa-solid, .main .sec-width .ul .search2 .fa-solid{
+    position: absolute;
+    left: 5;
+    top: 11;
+    font-size: 12px;
+    color: rgba(240, 248, 255, 0.375);
+}
+.main .sec-bar .sec-width .flex1 .first-1 .ul h5{
+    margin-top: 14px;
+    cursor: pointer;
+}
+.main .sec-bar .sec-width .flex1 .first-1 #menu1{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background: rgba(26, 30, 74) ; 
+    width: 60%;
+    left: 21;
+    padding: 15px;
+    border-radius: 10px;
+}
+.main .sec-bar .sec-width .flex1 .first-1 .ul.active{
+    visibility: hidden;
+}
+.main .sec-bar .sec-width .flex1 .first-1 #menu2{
+    position: absolute;
+    z-index: 1;
+    background: rgba(26, 30, 74) ; 
+    width: 60%;
+    left: 21;
+    padding: 10px;
+    border-radius: 10px;
+}
+.main .sec-bar .sec-width .flex1 .first-1 .ul.live{
+    visibility: hidden;
+}
+.main .sec-bar .sec-width .flex1 .first-1 .ul h5 span{
+    text-align: right;
+}
+.main .sec-bar .sec-width .flex1 .first-1 .ul h5:hover{
+    border-radius: 20px;
+    background: rgba(83, 93, 200, 0.351);
+    border-style: none;
+    outline: none;
+    padding: 5px 20px;
+    transition: 0.4s;
+    
+}
+.main .sec-bar .sec-width .flex1 .sec-1{
+    line-height: 0px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.main .flex1 .sec-1 p,.main .flex1 .sec-2 h6 {
+    text-align: right;
+}
+.main .sec-bar .sec-width .flex1 .sec-1 p{
+    font-size: 13px;
+}
+.main .sec-bar .sec-width .flex1 .max-num .max{
+    background-color: rgb(46, 52, 118);
+    padding: 4px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.main .sec-bar .sec-width .flex1 .max-num .zero{
+    color: rgb(82, 96, 254);
+    padding-left: 5px;
+}
+.main .sec-bar .col-md-5{
+    margin-top: 80px;
+}
+.main .sec-bar .swap{
+    margin-top: 30px;
+}
+.main .sec-bar .swap button{
+    width: 100%;
+    color: whitesmoke;
+    padding: 7px;
+    font-weight: bold;
+    background-color: rgb(25, 29, 78);
+    border-style: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.main .sec-bar .swap button:hover{
+    background: rgb(70, 80, 192);
+}
+
+/**poo**/
+.main .sec{
+    background: linear-gradient(180deg, rgba(19, 23, 59, 0.985), rgba(15, 19, 59, 0.974));
+    width: 85%;
+    height: 100vh;
+    padding: 40px;
+}
+.main .sec .pool-width{
+    display: flex;
+    justify-content: space-between;
+}
+.main .pool-width .pool-mine{
+    width: 35%;
+    color: rgba(255, 255, 255, 0.999);
+}
+.main .pool-width .pool-mine p{
+    color: rgba(255, 255, 255, 0.932);
+    font-size: 13px;
+    line-height: 27px;
+}
+.main .pool-width .pool-ava p{
+    color: rgba(255, 255, 255, 0.932);
+    margin-bottom: 5px;
+}
+
+.main .pool-width .pool-ava h3{
+    color: rgba(255, 255, 255, 0.996);
+    text-align: center;   
+}
+.main .pool-ava button{
+    background: rgba(42, 56, 215, 0.938);
+    border-style: none;
+    padding: 5px 15px;
+    color: rgba(255, 255, 255, 0.975);
+    border-radius: 15px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.main .pool-ava button:hover{
+    color: rgba(0, 0, 255, 0.94);
+    background: rgba(255, 255, 255, 0.785);
+}
+.main .pool-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.main .pool-flex .pf1{
+    width: 32%;
+    color: rgba(255, 255, 255, 0.985);
+    background: rgba(139, 143, 187, 0.194);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(245, 245, 245, 0.297), 0px 1px 2px rgba(245, 245, 245, 0.257);
+}
+.main .pool-flex .pf1 h3{
+    font-size: 21px;
+}
+.main .pool-flex .pf1 p{
+    font-size: 13.5px;
+    color: rgba(246, 158, 17, 0.953);
+}
+.main .pool-last .last1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.main .pool-last .last1 h4, .last1 h5{
+    width: 25%;
+}
+.main .pool-last h3{
+    color: rgba(255, 255, 255, 0.978);
+    font-size: 25px;
+    margin: 20px 0;
+    font-size: 18px;
+}
+.main .pool-last .last1 h4{
+    font-size: 14px;
+    color: rgba(245, 245, 245, 0.831);
+}
+.main .pool-last #l1{
+    background: rgba(4, 55, 174, 0.09);
+    padding: 15px 15px 5;
+    border-radius: 5px;
+}
+.main .pool-last #l2{
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.122);
+    padding-bottom: 5px;
+}
+.main .pool-last #l2 h5{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.988);
+}
+.main .pool-last #l2 .day{
+    margin-left: 10px;
+}
+.main .pool-last #l2 .unbond, .main .pool-last .action{
+    text-align: right;
+}
+.main .pool-last #l2 .unbond{
+    color: rgba(218, 134, 9, 0.801);
+}
+
+/**nft**/
+.main .nft{
+    background: linear-gradient(rgba(2, 0, 0, 0.709), rgba(0, 0, 0, 0.754)), url(../images/pix8.jpg);;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 100vh;
+    padding: 40px;
+}
+.main .nft .nft-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: filter 0.7s;
+}
+.main .nft .nft-cont .nft-back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+.main .nft .nft-cont .nft-back h1{
+    color: white;
+    font-family: 'poppins';
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.805);
+}
+.main .nft .nft-cont .nft-back p{
+    color: whitesmoke;
+    font-family: 'poppins';
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.805);
+}
+.main .nft .nft-cont .nft-back button{
+    padding: 10px 20px;
+    background: orangered;
+    width: 200px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+.main .nft .nft-cont .nft-back button:hover{
+    filter: brightness(0.8);
+}
+.main .nft .nft-cont .nft-back.active{
+    filter: blur(2px) brightness(.7);
+}
+.main .nft .pop{
+    position: fixed;
+    background: url(../images/gift3.jpg);
+    width: 400px;
+    height: fit-content;
+    margin: 0 auto;
+    top: 50%;
+    left: 40%;
+    transform: translatey(-50%);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 1 2px 3px rgba(0, 0, 0, 0.912);
+    transition: all 0.7s;
+    opacity: 1;
+}
+.main .nft .pop h4{
+    margin: 10px 0;
+    color: blueviolet;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.927);
+}
+.main .nft .pop label{
+    color: rgb(203, 17, 197);
+    font-family: sans-serif;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.358);
+}
+.main .nft .pop .but{
+    background: aqua;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.778);
+    margin-bottom: 10px;
+}
+.main .nft .pop input{
+    margin: 10px 0;
+    outline: none;
+    text-align: center;
+}
+.main .nft .pop input::placeholder{
+    color: rgb(203, 203, 203);
+}
+.main .nft .pop .close{
+    position: absolute;
+    right: 20px;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    color: brown;
+}
+.main .nft .pop.active{
+    visibility: hidden;
+    top: 10%;
+    opacity: 0;
+}
+
+.nft-img{
+    width: 100%;
+    padding: 50px 20px 40px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(245, 245, 245, 0.794);
+}
+.nft-img .img1{
+    width: 24%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.972);
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.137), 0px 1px 2px rgba(0, 0, 0, 0.097);
+}
+.nft-img .img1 img{
+    border-radius: 7px;
+}
+.nft-img .img1 .fa-star{
+    margin-top: 20px;
+    font-size: 10px;
+    color: rgba(255, 145, 0, 0.813);
+}
+.nft-img .img1 h4{
+    font-size: 17px;
+    margin-top: 10px;
+    color: rgb(123, 26, 172);
+    font-family: 'poppins';
+}
+.nft-img .img1 p{
+    font-size: 16px;
+    color: rgb(46, 81, 85);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'poppins';
+}
+.nft-img .img1 button{
+    background: rgb(1, 105, 1);
+    border: none;
+    padding: 5px 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 0.929);
+}
+.nft-img .img1 button:hover{
+    color: green;
+    transition: .4s;
+    background: whitesmoke;
+}
+.nft-img .img1 .fa-cart-shopping{
+    position: absolute;
+    color: crimson;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+/**swap**/
+.main .swap-sec{
+    background: linear-gradient(rgba(2, 0, 0, 0.709), rgba(0, 0, 0, 0.754)), url(../images/pix11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 100vh; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'poppins';
+}
+.main .swap-sec .swapflex{
+    background: rgb(39, 44, 97);
+    padding: 30px 40px;
+}
+.main .swap-sec label{
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+}
+.main .swap-sec input{
+    padding: 3.5px 8px;
+    width: 50%;
+    outline: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 12px;
+}
+.main .swap-sec .swap-buy button{
+    font-size: 13px;
+    padding: 7px 8px;
+    border: none;
+    background: whitesmoke;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.811);
+}
+.main .swap-sec button .fa-naira-sign{
+    margin-right: 5px;
+    color: white;
+    background: rgb(4, 156, 4);
+    padding: 5px;
+    border-radius: 50%;
+}
+.main .swap-sec button .fa-dollar-sign{
+    margin-right: 5px;
+    color: white;
+    background: rgb(221, 8, 8);
+    padding: 5px;
+    border-radius: 50%;
+}
+.swap1 h3{
+    font-size: 19px;
+    text-shadow: 2px 2px 2px black;
+    color: whitesmoke;
+}
+.swap1 p{
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+}
+.swap-buy h4{
+    font-size: 18px;
+    margin: 13px;
+}
+.summary{
+    position: relative;
+    background: rgba(51, 58, 129, 0.936);
+    padding: 10px 10px 5px;
+    border-radius: 10px;
+}
+.summary .fa-solid{
+    position: absolute;
+    right: 20;
+    top: 13;
+    cursor: pointer;
+}
+.summary h4{
+    font-size: 13.5px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+.summary h4 span{
+    color: orange;
+}
+.fee-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid whitesmoke;
+}
+.fee-flex.active{
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.fee-flex .fee1{
+    text-align: left;
+}
+.fee-flex .fee2{
+    text-align: right;
+}
+.main .summary .fa-angle-down{
+    transition: transform .2s;
+}
+.move.fa-angle-down{
+    transform: rotate(180deg);
+}
+
+.swap-sec .swap-buy form .buton button{
+    padding: 5px;
+    width: 20%;
+    background: green;
+    box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.713);
+    color: rgba(255, 255, 255, 0.886);
+    margin-top: 12px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: .4s;
+}
+.swap-sec .swap-buy form .buton button:hover{
+    background: rgba(3, 217, 42, 0.864);
+}
+.main .swap-sec .nav-top{
+    display: none;
+}
+/**media screen*/
+@media(max-width:413px){
+    .main .sec-bar{
+        padding: 30px 15px 60px;
+    } 
+    .main .swap-sec{
+        height: 115vh;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 991px){
+    .main{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: block;
+    }
+    .main .side-bar{
+        width: 55%;
+        height: 100vh;
+        background: rgb(39, 44, 97);
+        padding: 30px 5px;
+        z-index: 1;
+        position: absolute;
+        transition-delay: 0.1s;
+    }
+    .main .side-bar .twit{
+        margin-left: 15px;
+    }
+    .main .side-bar.active{
+        visibility: hidden;
+    }
+    .main .side-bar .logo{
+        color: orangered;
+        text-shadow: 1px 1px 1px rgb(34, 34, 34);
+        font-size: 18px;
+        font-weight: bold;
+        background: rgb(58, 66, 157);
+        padding: 5px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .main .side-bar .logo span{
+        color: crimson;
+    }
+    .main .side-bar ul{
+        margin: 90px 0px 100px;
+    }
+    .main .side-bar ul li{
+        margin-top: 40px;
+    }
+    .main .sec-bar{
+        width: 100%;
+        height: fit-content;
+        background: linear-gradient(rgba(2, 0, 0, 0.632), rgba(0, 0, 0, 0.604)), url(../images/pix16.jpg);;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 15px 50px;
+        position: absolute;
+        top: 0;
+    }
+    .main .sec-bar .swap button{
+        background: rgba(46, 88, 204, 0.65);
+    }
+    .main .nav-top{
+        display: block;
+        display: flex;
+        width: 100%;
+        margin-bottom: 15px;
+        justify-content: space-between;
+    }
+    .main .nav-top .logo{
+        color: rgba(220, 20, 60, 0.929);
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .main .nav-top .logo span{
+        color: rgba(140, 48, 14, 0.883);
+    }
+    .main .nav-top .menu-but{
+        margin-right: 20px;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.976);
+    }
+    .main .sec .nav-top .menu-but{
+        border: 1px solid rgba(245, 245, 245, 0.725);
+        padding: 7px;
+        border-radius: 7px;
+    }
+    .main .sec-bar .sec-width{
+        width: 100%;
+        background: rgba(4, 17, 163, 0.841);
+        padding: 10px 10px;
+        margin-top: 7px;
+        border-radius: 15px;
+    }
+    .main .sec-bar .sec-width .flex1 .first-1 .ul h5:hover{
+        transition: none;
+        
+    }
+    .main .sec-bar .sec-width .flex1 .first-1 .fa-bitcoin{
+        font-size: 15px;
+    }
+    .main .sec-bar .sec-width .flex1 .first-1 .fa-ethereum{
+        font-size: 15px;
+    }
+    .main .sec-bar .col-md-5{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .main .side-bar ul li a{
+        transition: none;
+    }
+    /*pool*/
+    .main .sec{
+        background: rgb(21, 26, 83);
+        width: 100%;
+        height: fit-content;
+        padding: 30px 15px;
+        position: absolute;
+        top: 0;
+    }
+    .main .sec .pool-width{
+        margin-top: 30px;
+    }
+    .main .pool-width .pool-mine{
+        width: 50%;
+        background: rgba(3, 42, 125, 0.424);
+        padding: 18px 15px 10px;
+        color: rgba(255, 255, 255, 0.999);
+        font-family: 'poppins';
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.353), 2px 3px 2px rgba(0, 0, 0, 0.221);
+    }
+    .main .pool-width .pool-ava{
+        margin-top: 40px;
+        margin-right: 15px;
+        font-family: 'poppins';
+    }
+    .main .pool-width .pool-mine p{
+        color: rgba(255, 255, 255, 0.932);
+        font-size: 13px;
+        line-height: 27px;
+    }
+    .main .pool-width .pool-ava p{
+        color: rgba(255, 255, 255, 0.932);
+        margin-bottom: 5px;
+    }
+    
+    .main .pool-width .pool-ava h3{
+        color: rgba(255, 255, 255, 0.996);
+        text-align: center;   
+    }
+    .main .pool-flex{
+        margin-top: 35px;
+    }
+    .main .pool-flex .pf1{
+        width: 32%;
+    }
+    .main .pool-flex .pf1 h3{
+        font-size: 16px;
+        font-family: 'poppins';
+    }
+    .main .pool-flex .pf1 p{
+        font-size: 13px;
+        color: rgba(246, 158, 17, 0.953);
+        font-family: 'poppins';
+    }
+    
+    .main .pool-last .last1 h4, .last1 h5{
+        width: 23%;
+        font-family: 'poppins';
+    }
+    .main .pool-last h3{
+        margin: 25px 10px;
+        font-size: 16px;
+        font-family: 'poppins';
+    }
+    .main .pool-last .last1 h4{
+        font-size: 13px;
+        font-family: 'poppins';
+    }
+    .main .pool-last .last-flex{
+        background: rgba(15, 15, 138, 0.283);
+        margin-bottom: 35px;
+        padding: 10px 10px 30px;
+        border-radius: 10px;
+        box-shadow: -2px -2px 2px rgba(245, 245, 245, 0.688), 3px 2px 3px rgba(245, 245, 245, 0.346);
+    }
+    .main .pool-last #l2 h5{
+        font-size: 12px;
+    }
+
+    /**nft**/
+    .main .nft{
+        background: linear-gradient(rgba(2, 0, 0, 0.541), rgba(0, 0, 0, 0.49)), url(../images/pix8.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50vh;
+        padding: 40px;
+    }
+    .main .nft .nft-cont{
+        height: 30vh;
+    }
+    .main .nft .nft-cont .nft-back h1{
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    .main .nft .nft-cont .nft-back p{
+        font-size: 17px;
+        letter-spacing: 2px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .main .nft .nft-cont .nft-back button{
+        padding: 10px 20px;
+        background: orangered;
+        width: fit-content;
+        border: none;
+        border-radius: 20px;
+    }
+    .main .nft .pop{
+        width: fit-content;
+        top: 20%;
+        left: 20%;
+        padding: 20px 20px;
+    }
+    .main .nft .pop h4{
+        font-size: 25px;
+    }
+    .main .nft .pop label{
+        color: rgb(140, 15, 136);
+        font-size: 16px;
+        text-shadow: none;
+    }
+    .main .nft .pop .close{
+        right: 15px;
+    }
+
+    .nft-img{
+        padding: 30px 15px 20px;
+        background: rgba(220, 220, 220, 0.099);
+    }
+    .nft-img .img1{
+        width: 49%;
+        position: relative;
+        background: rgba(255, 255, 255, 0.972);
+        padding: 30px 20px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.137), 0px 1px 2px rgba(0, 0, 0, 0.097);
+    }
+    .nft-img .img1 img{
+        border-radius: 7px;
+    }
+    .nft-img .img1 .fa-star{
+        margin-top: 20px;
+        font-size: 10px;
+        color: rgba(255, 145, 0, 0.813);
+    }
+    .nft-img .img1 h4{
+        font-size: 17px;
+        margin-top: 10px;
+        color: rgb(123, 26, 172);
+    }
+    .nft-img .img1 p{
+        font-size: 16px;
+        color: rgb(46, 81, 85);
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .nft-img .img1 button{
+        background: rgb(1, 105, 1);
+        border: none;
+        padding: 5px 20px;
+        text-transform: capitalize;
+        font-weight: bold;
+        border-radius: 7px;
+        color: rgba(255, 255, 255, 0.929);
+    }
+    .nft-img .img1 button:hover{
+        color: green;
+        transition: .4s;
+        background: whitesmoke;
+    }
+    .nft-img .img1 .fa-cart-shopping{
+        position: absolute;
+        color: crimson;
+        right: 20px;
+        bottom: 20px;
+        cursor: pointer;
+    }
+
+    /**swap**/
+    .main .swap-sec{
+        background: linear-gradient(rgba(2, 0, 0, 0.709), rgba(0, 0, 0, 0.754)), url(../images/pix11.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 10px;
+    }
+    .main .swap-sec .nav-top{
+        display: block;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .main .swap-sec .swapflex{
+        background: transparent;
+    }
+    .main .swap-sec label{
+        margin-bottom: 15px;
+    }
+    .main form{
+        width: 100%;
+    }
+    .main .swap-sec input{
+        padding: 4px 8px;
+        margin-bottom: 15px;
+    }
+    .swap1 h3{
+        font-size: 23px;
+        color: #f44336;
+        line-height: 32px;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+    }
+    .swap-buy h4{
+        font-size: 24px;
+        margin: 19px;
+        color: #f44336;
+    }
+    .summary{
+        background: rgb(13, 66, 151);
+        padding: 15px 15px 8px;
+    }
+    .swap-sec .buton button{
+        padding: 5px 5px 8px;
+        margin-top: 29px;
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .main .sec{
+        height: 100vh;
+    }
+    .main .swap-sec .nav-top{
+        display: block;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .main .swap-sec .swapflex{
+        background: transparent;
+        margin: 0 auto;
+    }
+    .main .swap-sec input{
+        padding: 10px 10px;
+    }
+    .main .swap-sec input::placeholder{
+        font-size: 21px;
+        text-align: center;
+    }
+    .swap1 h3{
+        font-size: 30px;
+    }
+    .swap1 p{
+        font-size: 26px;
+    }
+    .swap-buy h4{
+        font-size: 30px;
+        margin: 23px;
+    }
+    .swap-buy label{
+        font-size: 27px;
+    }
+    .summary{
+        padding: 20px 20px 12px;
+    }
+    .summary .fa-angle-down{
+        top: 21;
+        right: 29;
+        font-size: 24px;
+    }
+    .summary h4{
+        font-size: 24px;
+    }
+    .swap-sec .buton button{
+        padding: 10px 10px 10px;
+        font-size: 24px;
+    }
+    .main .sec-bar{
+        padding: 30px 15px 60px;
+        height: 100vh;
+    } 
+}
+@media (min-width: 991px){
+    .main .sec-bar .col-md-5{
+        display: none;
+    }
+}

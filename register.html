@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>embliss exchange</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <link rel="stylesheet" href="fonts/css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="./js/index.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="contact" id="reg">
+                <h2>Register</h2>
+                <div>
+                    <div class="form1" id="form-name">
+                        <div class="form-name" id="form-name1">
+                            <label for="name">First Name</label><br>
+                            <input type="text" placeholder="first name" id="firstName">
+                            <p class="feedback" id="feed1"></p>
+                        </div>
+                        <div class="form-name">
+                            <label for="name">Last Name</label><br>
+                            <input type="text" placeholder="last name" id="lastName">
+                            <p class="feedback" id="feed2"></p>
+                        </div>
+                    </div>
+                    <div class="form1">
+                        <label for="username">Username</label><br>
+                        <input type="username" placeholder="username" id="username">
+                        <p class="feedback" id="feed3"></p>
+                    </div>
+                    <div class="form1">
+                        <label for="username">E-mail</label><br>
+                        <button>@</button><input type="email" placeholder="email" id="at" >
+                        <p class="feedback" id="feed4"></p>
+                    </div> 
+                    <div class="form1">
+                        <label for="password">Password</label><br>
+                        <input type="password" placeholder="ateast 8 digits" id="password">
+                        <p class="feedback" id="feed5"></p> 
+                    </div>
+                    <div class="form1">
+                        <label for="password">Confirm Password</label><br>
+                        <input type="password" placeholder="password" id="confirm">
+                        <p class="feedback" id="feed6"></p>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" name="gender" id="male" value="male"> Male
+                        <input type="radio" name="gender" id="female" value="female"> Female
+                        <p class="feedback" id="feed7" style="color: rgba(0, 225, 255, 0.92);">Gender optional</p>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" id="terms"> I agree to the following terms and conditions
+                        <p class="feedback" id="feed8"></p>
+                    </div>
+                    <div class="reg-btn">
+                        <a href="swap.html"><button type="submit" class="but" onclick="return register()">REGISTER</button></a>
+                    </div>
+                </div>
+        </div>
+
+        <script>
+
+
+              function register(){
+
+                var Name = document.getElementById('firstName').value;
+                var last = document.getElementById('lastName').value;
+                var username = document.getElementById('username').value;
+                var email = document.getElementById('at').value;
+                var password = document.getElementById('password').value; 
+                var confirm = document.getElementById('confirm').value;
+                var valid = false;
+                var terms = document.getElementById('terms').checked;
+                var letters = /^[a-zA-Z]*$/;
+                var mail = /^[a-zA-Z0-9]*[@]/;
+
+                var feed1 = document.getElementById('feed1');
+                var feed2 = document.getElementById('feed2');
+                var feed3 = document.getElementById('feed3');
+                var feed4 = document.getElementById('feed4');
+                var feed5 = document.getElementById('feed5');
+                var feed6 = document.getElementById('feed6');
+                var feed7 = document.getElementById('feed7');
+                var feed8 = document.getElementById('feed8');
+                
+
+
+                if(Name.trim() == ""){
+                    feed1.innerHTML= 'first name is invalid';
+                    return false;
+                }
+                else if(!Name.match(letters)){
+                    feed1.innerHTML= 'must be letters';
+                    return false;
+                }
+                else if(last.trim() == ""){
+                    feed2.innerHTML= 'last name is invalid';
+                    return false;
+                }
+                else if(!last.match(letters)){
+                    feed2.innerHTML= 'must be letters';
+                    return false;
+                }
+                else if(username.trim() == ""){
+                    feed3.innerHTML= 'input username';
+                    return false;
+                }
+                else if(email.trim() == ""){
+                    feed4.innerHTML= 'input email';
+                    return false;
+                }
+                else if(!email.match(mail)){
+                    feed4.innerHTML= 'be sure to input an @';
+                    return false;
+                }
+                else if(password.trim() == ""){
+                    feed5.innerHTML= 'input password';
+                    return false;
+                }
+                else if(password.length < 8){
+                    feed5.innerHTML= 'atleast 8 password';;
+                    return false;
+                }
+                else if(confirm.trim() == ""){
+                    feed6.innerHTML= 'confirm your password';
+                    return false;
+                }
+                else if(!confirm.match(password)){
+                    feed6.innerHTML= 'must match password';
+                    return false;
+                }
+                else if(valid){
+                    feed7.innerHTML = 'please select gender';
+                    return false;
+                }
+                else if(terms == ""){
+                    feed8.innerHTML = 'you must agree';
+                    return false;
+                }
+                else{
+                    alert('registeration succesful')
+                    return true;
+                }
+                
+              }
+
+        </script>
+    </body>
+</html>

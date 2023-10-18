@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>embliss exchange</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles2.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="fonts/css/all.css">
+        <link rel="stylesheet" type="text/css" href="./js/bootstrap.js">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="./js/index2.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <style>
+            .fa-toolbox{
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="side-bar active">
+                <div class="logo">Embliss <span>Exchange</span></div>
+                <ul>
+                    <li class="trade"><i class="fa-sharp fa-solid fa-money-bill-trend-up"></i><a href="swap.html">Trade</a></li>
+                    <li><i class="fa-brands fa-artstation"></i><a href="nft.html">Nfts</a></li>
+                    <li><i class="fa-solid fa-gifts"></i><a href="home.html">Swap</a></li>
+                    <li><i class="fa-solid fa-toolbox"></i><a href="pool.html">Pool</a></li>
+                    <li><i class="fa-solid fa-credit-card"></i><a href="payment.html">Payment</a></li>
+                </ul>
+                <div class="last-side">
+                    <div class="ver">
+                        <h5>Version</h5>
+                        <p>v5.2 EE</p>
+                    </div>
+                </div>
+                <div class="sign-out">
+                    <i class="fa-solid fa-right-from-bracket"></i><a href="index.html">Sign out</a>
+                </div>
+                <div class="twit">
+                    <a a href="https://www.twitter.com/EzealaMercy3"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.telegram.com/Ezeala Mercy"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/Mercybliss.Ezeala"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="sec">
+                <div class="nav-top">
+                    <div class="logo">Embliss <span>Exchange</span></div>
+                    <div class="menu-but" id="men">
+                      <i class="fa-solid fa-bars active"></i>
+                    </div>
+                </div>
+                <div class="pool-width">
+                    <div class="pool-mine">
+                        <h4>Liquidity Mining</h4>
+                        <p>Connect to  bonding your tokens for a certain period of time to your exchange tokens and participate in pool governance</p>
+                    </div>
+                    <div class="pool-ava">
+                        <p>Availabe EE tokens</p>
+                        <h3>$0</h3>
+                        <button>Start Earning</button>
+                    </div>
+                </div>
+                <div class="pool-flex">
+                    <div class="pf1">
+                        <h3>Daily Bonding</h3>
+                        <p>APY 3.007%</p>
+                    </div>
+                    <div class="pf1">
+                        <h3>7 Days Bonding</h3>
+                        <p>APY 12,00.007%</p>
+                    </div>
+                    <div class="pf1">
+                        <h3>14 Days Bonding</h3>
+                        <p>APY 566.007%</p>
+                    </div>
+                </div>
+                <div class="pool-last">
+                    <h3>My Bondings</h3>
+                    <div class="last-flex">
+                        <div class="last1" id="l1">
+                            <h4>Bonding Duration</h4>
+                            <h4>Current APY</h4>
+                            <h4>Amount</h4>
+                            <h4 class="action">Action</h4>
+                        </div> 
+                        <div class="last1" id="l2">
+                            <h5 class="day">A day</h5>
+                            <h5>12.4004%</h5>
+                            <h5>0 BLISS/1</h5>
+                            <h5 class="unbond">Unbond all</h5>
+                        </div>
+                        <div class="last1" id="l2">
+                            <h5 class="day">7 days</h5>
+                            <h5>5.4004%</h5>
+                            <h5>0 BLISS/1</h5>
+                            <h5 class="Unbond">Unbond all</h5>
+                        </div>
+                        <div class="last1" id="l2">
+                            <h5 class="day">14 days</h5>
+                            <h5>4004%</h5>
+                            <h5>0 BLISS/1</h5>
+                            <h5 class="Unbond">Unbond all</h5>
+                        </div>
+                    </div>
+                    <h3>Pool Catalyst</h3>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/index2.js"></script> 
+        <script>
+            var menu = document.querySelector('.menu-but');
+            var side = document.querySelector('.side-bar');
+
+            menu.addEventListener('click', () =>{
+                side.classList.toggle('active');
+            })
+        </script>
+    </body>
+</html>

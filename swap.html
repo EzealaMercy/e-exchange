@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>embliss exchange</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles2.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="fonts/css/all.css">
+        <link rel="stylesheet" type="text/css" href="./js/bootstrap.js">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="./js/index2.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="side-bar active">
+                <div class="logo">Embliss <span>Exchange</span></div>
+                <ul>
+                    <li class="trade"><i class="fa-sharp fa-solid fa-money-bill-trend-up"></i><a href="swap.html">Trade</a></li>
+                    <li><i class="fa-brands fa-artstation"></i><a href="nft.html">Nfts</a></li>
+                    <li><i class="fa-solid fa-gifts"></i><a href="home.html">Swap</a></li>
+                    <li><i class="fa-solid fa-toolbox"></i><a href="pool.html">Pool</a></li>
+                    <li><i class="fa-solid fa-credit-card"></i><a href="payment.html">Payment</a></li>
+                </ul>
+                <div class="last-side">
+                    <div class="ver">
+                        <h5>Version</h5>
+                        <p>v5.2 EE</p>
+                    </div>
+                </div>
+                <div class="sign-out">
+                    <i class="fa-solid fa-right-from-bracket"></i><a href="index.html">Sign out</a>
+                </div>
+                <div class="twit">
+                    <a a href="https://www.twitter.com/EzealaMercy3"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.telegram.com/Ezeala Mercy"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/Mercybliss.Ezeala"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="swap-sec">
+                <div class="nav-top">
+                    <div class="logo">Embliss <span>Exchange</span></div>
+                    <div class="menu-but" id="men">
+                      <i class="fa-solid fa-bars active"></i>
+                    </div>
+                </div>
+                <div class="swapflex">
+                    <div class="swap1">
+                        <h3>Welcome to Embliss Exchange.com!!</h3>
+                        <p>Make payment to buy your dollar and crypto assets here</p>
+                        <div class="swap-buy">
+                            <h4>Buy USDT</h4>
+                            <form action="">
+                                <label for="">I want to spend</label><br>
+                                <input type="text" placeholder="amount in naira"><button><i class="fa-solid fa-naira-sign"></i>NGN</button><br>
+                                <label for="">I want to buy</label><br>
+                                <input type="text" placeholder="crypto/usdt"><button><i class="fa-solid fa-dollar-sign"></i>CRYPTO</button><br>
+
+                                <div class="buton"><button>Buy</button></div>
+                            </form>  
+                        </div>
+                        <div class="summary">
+                            <h4>You get <span>297 USDT</span> for <span>#20000</span></h4>
+                            <i class="fa-solid fa-angle-down" id="swap-angle"></i>
+                            <div class="fee-flex active">
+                                <div class="fee1">
+                                    <p>297 USDT @ #20000</p>
+                                    <p>Networking fee</p>
+                                    <p>Processing fee</p>
+                                </div>
+                                <div class="fee2">
+                                    <p>US$286</p>
+                                    <p>US$0.78</p>
+                                    <p><span>as low as US$9.9</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/index2.js"></script> 
+        <script>
+            var swapAngle = document.querySelector('.summary .fa-angle-down');
+            var fee = document.querySelector('.fee-flex');
+
+            var menu = document.querySelector('.menu-but');
+            var side = document.querySelector('.side-bar');
+
+            swapAngle.addEventListener('click', () => {
+                fee.classList.toggle('active');
+                swapAngle.classList.toggle('move')
+            })
+
+            menu.addEventListener('click', () =>{
+                side.classList.toggle('active');
+            })
+        </script>
+    </body>
+</html>

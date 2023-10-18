@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>embliss exchange</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="fonts/css/all.css">
+        <link rel="stylesheet" type="text/css" href="./js/bootstrap.js">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="./js/index.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="sign-all">
+            <div class="max-wit">
+                <div class="sign1">
+                    <div class="text">
+                        <h3>Login to your account</h3>
+                    </div>
+                    <p>connect with social networks</p>
+                    <div class="brands">
+                        <a href="https://www.facebook.com/Mercybliss.Ezeala"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/EzealaMercy3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-solid fa-envelope-circle-check"></i></a>
+                        <a href="https://wa.me/09031199313"><i class="fa-brands fa-whatsApp"></i></a>
+                    </div>
+                    <h5 style="font-variant: small-caps; color: rgb(207, 195, 180);">or</h5>
+                    <div class="form" onclick="return sign()">
+                        <div class="inp1">
+                            <input type="text" placeholder="email" id="email" required>
+                        </div>
+                        <div class="inp1">
+                            <input type="text" placeholder="password" id="pass">
+                        </div>
+                        <div class="butt">
+                           <a href="swap.html" class="pay"><button type="submit">Sign in</button></a>
+                        </div>
+                    </div>
+                    <a><p>forgot password?</p></a>
+                </div>
+                <div class="sign2">
+                    <h2>New here?</h2>
+                    <h4>Register and get started</h4>
+                    <a href="register.html">sign up</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            function sign(){
+                var mail = document.getElementById('email').value;
+                var errop = document.getElementById('pass').value;
+                var leter = /^[a-zA-Z0-9]*[@]/;
+
+                 
+                if(mail.trim() == ""){
+                    document.getElementById('email').style.border= '1px solid red';
+                    return false;
+                } 
+                else if(!mail.match(leter)){
+                    document.getElementById('email').style.border= '1px solid red';
+                    return false;
+                }
+                else if(errop.trim() == ""){
+                    document.getElementById('pass').style.border= '1px solid red';
+                    return false;
+                }     
+                else{ 
+                    return true;
+                }
+            } 
+        </script>
+    </body>
+</html>
